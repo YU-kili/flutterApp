@@ -11,18 +11,16 @@ class MyApp extends StatelessWidget{
         appBar: AppBar(
           title:Text('TextWidget'),
         ),
-        body: Center(
-          child: Text(
-            '项目都是 域名 + 用户 + 项目，试试去掉域名，能来围观的，不会迷项目都是 域名 + 用户 + 项目，试试去掉域名，能来围观的，不会迷项目都是 域名 + 用户 + 项目，试试去掉域名，能来围观的，不会迷',
-            textAlign:TextAlign.left,
-            style: TextStyle(
-              fontSize: 25.0,
-              color: Color.fromARGB(255, 255, 150, 150),
-              decoration: TextDecoration.underline,
-              decorationStyle: TextDecorationStyle.solid
-            )
-            
+        body:Center(
+          child: new Container(
+            child: new Text('hello YDD',
+            style: TextStyle(fontSize: 40.0),
             ),
+            alignment: Alignment.centerLeft,
+            width: 500.0,
+            height: 400.0,
+            color: Colors.lightBlue,
+          )
           )
       )
     );
