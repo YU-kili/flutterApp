@@ -12,18 +12,16 @@ class MyApp extends StatelessWidget{
           title:Text('TextWidget'),
         ),
         body:Center(
-          child: new Container(
-            child: new Text('hello YDD',
-            style: TextStyle(fontSize: 40.0),
+          child:  Container(
+            child: new Image.network(
+              'https://img2.sycdn.imooc.com/5c18cf540001ac8206000338-360-202.jpg',
+              scale: 4.0,
             ),
-            alignment: Alignment.centerLeft,
-            width: 500.0,
-            height: 400.0,
+            width: 400.0,
+            height: 300.0,
             color: Colors.lightBlue,
-          )
-          )
+          ))
       )
     );
   }
-  
 }
